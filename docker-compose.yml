@@ -4,7 +4,7 @@ services:
   hddtemp:
     container_name: hddtemp
     image: emilgil/hddtemp:latest
-    restart: Always
+    restart: always
     privileged: true
     ports:
       - 7634:7634
