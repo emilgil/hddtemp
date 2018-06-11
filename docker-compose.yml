@@ -1,0 +1,12 @@
+## docker-compose.yml
+version: '3'
+services:
+  hddtemp:
+    container_name: hddtemp
+    image: emilgil/hddtemp:latest
+    restart: Always
+    privileged: true
+    ports:
+      - 7634:7634
+    environment:
+      - DRIVES=sd[abcde]
