@@ -20,4 +20,5 @@ services:
     ports:
       - 7634:7634
     environment:
-      - DRIVES=sd[abcde] ```
+      - DRIVES=sd[abcde] 
+```
